@@ -34,8 +34,8 @@ namespace SQL_LiteDB
 
                     cmd.CommandText = "SELECT * FROM pesmi;";
 
-                    cmd.ExecuteNonQuery();
-                    /*
+                    //cmd.ExecuteNonQuery();
+                    
                     SQLiteDataReader reader = cmd.ExecuteReader();
 
                     while (reader.Read())
@@ -46,7 +46,7 @@ namespace SQL_LiteDB
                         string naslov = reader.GetString(3);
 
                         MessageBox.Show(ime + " " + priimek + ": " + naslov);
-                    }*/
+                    }
                     cmd.Dispose();
                 }
                 conn.Close();
